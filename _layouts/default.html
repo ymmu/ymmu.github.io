@@ -162,6 +162,17 @@ comments: true
             {% include disqus.html %}
           </div>
         {% endif %}
+
+        {% capture disqus %}
+          {%- include disqus.html -%}
+        {% endcapture %}
+        {% if disqus == "" %}
+          <hr>
+          <footer>
+            {{ disqus }}
+            <div id="post-disqus" class="container">
+          </footer>
+        {% endif %}
         
         {% capture footer_custom %}
           {%- include footer_custom.html -%}
