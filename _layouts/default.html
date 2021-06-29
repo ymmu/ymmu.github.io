@@ -173,6 +173,14 @@ comments: true
             <div id="post-disqus" class="container">
           </footer>
         {% endif %}
+            
+        {% if disqus != "" %}
+          <hr>
+          <footer>
+            {{ disqus }}
+            <div id="post-disqus" class="container">
+          </footer>
+        {% endif %}
         
         {% capture footer_custom %}
           {%- include footer_custom.html -%}
