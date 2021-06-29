@@ -33,13 +33,6 @@ exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "pac
 #logo: "/assets/images/just-the-docs.png"
 
 
-
----
-layout: default
-comments: true
-# other options
----
-
 # Enable or disable the site search
 # Supports true (default) or false
 search_enabled: true
