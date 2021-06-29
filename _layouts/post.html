@@ -5,10 +5,4 @@ comments: true
 ---
 
 {{ content }}
-
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'ymmu-github-io'; 
-    var disqus_identifier = '{{ page.id }}'; 
-...
-</script>
+{% include discus.html %}
