@@ -2,6 +2,7 @@
 layout: default
 title: Color
 parent: Utilities
+comments: true
 ---
 
 # Color Utilities
