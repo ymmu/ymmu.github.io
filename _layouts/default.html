@@ -157,6 +157,12 @@ comments: true
           </div>
         {% endif %}
         
+        {% if page.comments == false %}
+          <div id="post-disqus" class="container">
+            {% include disqus.html %}
+          </div>
+        {% endif %}
+        
         {% capture footer_custom %}
           {%- include footer_custom.html -%}
         {% endcapture %}
