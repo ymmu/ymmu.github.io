@@ -25,8 +25,13 @@ exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "pac
 
 
 # Disqus
-discus-identifier: ymmu-github-io # add your discus identifier
-disqus_shortname: 'ymmu-github-io'
+comments:
+  provider: discus
+  discus:
+    identifier: ymmu-github-io # add your discus identifier
+    shortname: ymmu-github-io
+
+
 # Regression tests
 # By default, the pages in /docs/tests are excluded when the ste is built.
 # To include them, comment-out the relevant line above.
