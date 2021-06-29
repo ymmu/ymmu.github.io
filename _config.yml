@@ -132,3 +132,16 @@ compress_html:
   profile: false
   # ignore:
   #   envs: all
+
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      read_time: true
+      comments: true
+      share: true
+      related: true
