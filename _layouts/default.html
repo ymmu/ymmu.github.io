@@ -152,13 +152,13 @@ comments: true
         {% endif %}
         
         {% if page.comments %}
-          <div id="post-disqus" class="container">
+          <div id="post-disqus-1" class="container">
           {% include disqus.html %}
           </div>
         {% endif %}
         
         {% if page.comments == false %}
-          <div id="post-disqus" class="container">
+          <div id="post-disqus-2" class="container">
             {% include disqus.html %}
           </div>
         {% endif %}
@@ -170,7 +170,7 @@ comments: true
           <hr>
           <footer>
             {{ disqus }}
-            <div id="post-disqus" class="container">
+            <div id="post-disqus-3" class="container">
             
             </div>
           </footer>
