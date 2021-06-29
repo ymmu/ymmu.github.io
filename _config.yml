@@ -23,15 +23,6 @@ exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "pac
 , "docs/tests/"
 ]
 
-
-# Disqus
-comments:
-  provider: disqus
-  disqus:
-    identifier: ymmu-github-io # add your discus identifier
-    shortname: ymmu-github-io
-
-
 # Regression tests
 # By default, the pages in /docs/tests are excluded when the ste is built.
 # To include them, comment-out the relevant line above.
@@ -134,6 +125,15 @@ compress_html:
   #   envs: all
 
 
+
+# Disqus
+comments:
+  provider: disqus
+  disqus:
+    identifier: ymmu # add your discus identifier
+    shortname: ymmu
+
+
 # Defaults
 defaults:
   # _posts
@@ -141,7 +141,16 @@ defaults:
       path: ""
       type: posts
     values:
+      layout: single
+      author_profile: true
       read_time: true
       comments: true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
